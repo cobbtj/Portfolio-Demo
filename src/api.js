@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'portfolio-demo-production.up.railway.app';
 
 export const getProperties = async (limit = 100, zipCode = null) => {
   const params = { limit };
@@ -40,6 +40,7 @@ export const getNeighborhoodSales = async (borough, months) => {
   });
   return response.data;
 };
+
 
 
 
